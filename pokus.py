@@ -34,5 +34,5 @@ def max_number(a, b, c):
     
 
 
-m = max_number(1, 2, 3)
+m = max_number(2.1, 4.2, 6.3)
 print(m)
