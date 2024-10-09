@@ -6,6 +6,6 @@ def sudy_nebo_lichy(cislo):
   else:
     print("Číslo", cislo, "je liché")
 
-# Volání funkce 
-#sudy_nebo_lichy(2)
-sudy_nebo_lichy(1000000)
+# Volani funkce 
+sudy_nebo_lichy(2)
+#sudy_nebo_lichy(1000000)
