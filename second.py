@@ -1,5 +1,5 @@
 def cislo_text(cislo):
-
+  cislo=int(cislo)
 
   cisla = {
     0: "nula", 1: "jedna", 2: "dva", 3: "tři", 4: "čtyři", 5: "pět", 
@@ -29,5 +29,5 @@ def cislo_text(cislo):
   
 if __name__ == "__main__":
     cislo = input("Zadej číslo: ")
-    text = cislo_text(int(cislo))
+    text = cislo_text((cislo))
     print(text)
