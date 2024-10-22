@@ -13,7 +13,7 @@ def cislo_text(cislo):
     2: "dvacet", 3: "třicet", 4: "čtyřicet", 5: "padesát", 
     6: "šedesát", 7: "sedmdesát", 8: "osmdesát", 9: "devadesát", 10: "sto",
   }
-
+  
   if 0 <= cislo <= 19:
     return cisla[cislo]
   elif 20 <= cislo <= 100:
