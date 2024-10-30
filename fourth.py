@@ -53,7 +53,7 @@ def je_tah_mozny(figurka, cilova_pozice, obsazene_pozice):
             return False
         
     if typ_figury == "král":
-        if abs(radek_cilovy - radek_vychozi <= 1 and sloupec_cilovy - sloupec_vychozi <=1):
+        if abs(radek_cilovy - radek_vychozi <= 1) and (sloupec_cilovy - sloupec_vychozi <=1):
             return True
         else:
             return False
