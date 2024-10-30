@@ -28,9 +28,9 @@ def je_tah_mozny(figurka, cilova_pozice, obsazene_pozice):
         else:
             return False
     if typ_figury == "jezdec":
-        if abs(radek_cilovy - radek_vychozi == 2 and sloupec_cilovy - sloupec_vychozi == 1):
+        if abs(radek_cilovy - radek_vychozi) == 2 and (sloupec_cilovy - sloupec_vychozi) == 1: 
             return True
-        elif abs(sloupec_cilovy - sloupec_vychozi == 2 and radek_cilovy - radek_vychozi == 1):
+        elif abs(sloupec_cilovy - sloupec_vychozi) == 2 and (radek_cilovy - radek_vychozi) == 1:
             return True
         else: 
             return False
