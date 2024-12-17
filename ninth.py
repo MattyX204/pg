@@ -4,22 +4,24 @@ def dec_to_bin(cislo):
     # funkce prevede cislo na binarni reprezentaci (cislo muze byt str i int!!!)
     # 7 -> "111"
     # 5 -> "101"
+    if cislo == 0:
+        return "0"
     pow = 0
     i = 0
     while True:
         m = 2 ** i
-        if m > cislo:
-            pow = m = -1
+        if m > cislo: 
+            pow = i - 1
             break
-        vysledek = ""
-        for i in range(pow, -1, -1):
-            m = 2 ** i
-            if m <= cislo:
-                vysledek += "1"
-                cislo -= m
-            else:
-                vylsedek += "0"
-        return vysledek
+    vysledek = ""
+    for i in range(pow, -1, -1):
+        m = 2 ** i
+        if m <= cislo:
+            vysledek += "1"
+            cislo -= m
+        else:
+            vylsedek += "0"
+    return vysledek
     
 
 
