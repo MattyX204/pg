@@ -39,7 +39,7 @@ def convert_to_czk(amount, currency):
             return round(amount * exchange_rate, 2) #nasobi castku kurzem
     
    
-    raise ValueError(f"Měna {currency} nenalezena v kurzovním lístku.")  #vyvola vyjimku pokud nenalezne kod meny
+    raise ValueError(f"Currency {currency} not found in the exchange rate list.")  #vyvola vyjimku pokud nenalezne kod meny
 
 # Pytest testy pro Příklad 3
 from unittest.mock import patch, MagicMock
