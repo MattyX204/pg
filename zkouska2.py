@@ -21,12 +21,15 @@ def convert_to_czk(amount, currency):
     
     lines = response.text.splitlines()
     
-    for line in lines:
 
-        if line.startswith("země|měna|množství|kód|kurz") or not line.strip():
+    for i, line in enumerate(lines):
+        if i == 0 or line.startswith("země|měna|množství|kód|kurz") or not line.strip():  #přeskakuje první řádek, záhlaví a prázdné řádky
             continue
    
         parts = line.split("|")  #nacita jednotlive hodnoty radku rozdelene danym znakem
+
+       # print(f"Parts: {parts}")
+
 
         if len(parts)>5:
             continue
